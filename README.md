@@ -1,5 +1,5 @@
 # API REST для YaMDB
-https://github.com/AlexiyD/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![example workflow](https://github.com/AlexiyD/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ## Описание:
 >Проект YaMDb собирает отзывы пользователей на произведения.
 >Произведения делятся на категории, такие как «Книги», «Фильмы», «Музыка».
