@@ -9,23 +9,23 @@
 >Пользователи могут оставлять "Отзывы" и ставят произведению оценку. Из оценок формируется рейтинг.
 
 ### Технологии:
-* Python 3.8 
-* Django 3.2.16
-* Django REST framework 3.12.4
+* Python 3.8 (https://docs.python.org/3.8/)
+* Django 3.2.16 (https://docs.djangoproject.com/en/4.2/)
+* Django REST framework 3.12.4 (https://www.django-rest-framework.org/community/release-notes/#release-notes)
 * PyJWT + Djoser 2.1.0
-* Djangorestframework-simplejwt 4.8.0
-* Docker
-* Nginx
-* Postgresql
+* Djangorestframework-simplejwt 4.8.0 
+* Docker (https://docs.docker.com/reference/)
+* Nginx (https://hub.docker.com/_/nginx)
+* Postgresql (https://www.postgresql.org/docs/)
 
 ## Как запустить проект:
 
 ### Клонировать репозиторий и перейти в него в командной строке:
 * git clone 
-https://github.com/AlexiyD/infra_sp2.git
+https://github.com/AlexiyD/yamdb_final.git
 
 ### Переходим в рабочую дерикторию:
-* cd .../infra
+* cd .../yamdb_final.git
 
 ### Выполнить миграции, создаём суперпользователя и собрать статику:
 * docker-compose exec web python manage.py migrate
