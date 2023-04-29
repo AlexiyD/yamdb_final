@@ -56,7 +56,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "infra/docker-compose.yaml"
-          target: "/home/yaps16/docker-compose.yaml"
+          target: "/home/yaps16/"
 
   deploy:
     runs-on: ubuntu-latest
