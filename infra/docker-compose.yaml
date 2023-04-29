@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
   web:
-    build: alexiyd/api_yamdb:vol1
+    image: alexiyd/api_yamdb:vol1
     restart: always
     volumes:
       - static_value:/app/static/
