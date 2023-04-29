@@ -43,6 +43,20 @@ jobs:
           file: ./api_yamdb/Dockerfile
           push: true
           tags: alexiyd/api_yamdb:vol1
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          source: "index.html,textfiles/*"
+          target: "/var/www/html"
 
   deploy:
     runs-on: ubuntu-latest
