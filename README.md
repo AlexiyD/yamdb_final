@@ -18,6 +18,7 @@
 * Nginx (https://hub.docker.com/_/nginx)
 * Postgresql (https://www.postgresql.org/docs/)
 
+
 ## Как запустить проект:
 
 ### Клонировать репозиторий и перейти в него в командной строке:
@@ -35,7 +36,13 @@ https://github.com/AlexiyD/yamdb_final.git
 ### Заполняем БД из дфмпа:
 * docker-compose exec web python manage.py loaddata fixtures.json
 
-
+### как заполнять файла .env:
+* DB_ENGINE - БД 
+* DB_NAME - имя БД
+* POSTGRES_USER - имя пользователя БД
+* POSTGRES_PASSWOR - пароль пользователя БД
+* DB_HOST - адрес хоста с БД 
+* DB_PORT - порт для подключения БД
 
 
 ## Примеры запросов и ответов:
